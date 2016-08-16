@@ -1,6 +1,6 @@
 # trinhkevin.github.io
 
-Resume website
+This is a website that contains my resume.
 
 
 Source for Bootstap theme (this theme was modified from the original): 
