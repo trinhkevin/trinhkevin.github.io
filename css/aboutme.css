@@ -1,0 +1,9 @@
+footer div p {
+	font-size: 12px;
+	line-height: 0;
+}
+
+div div div img {
+	height: 300px;
+	width: 300px;
+}

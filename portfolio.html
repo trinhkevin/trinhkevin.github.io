@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Porfolio</title>
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="images/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		 <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    	<!-- Stylesheet -->
+    	<link rel="stylesheet" href="css/portfolio.css">
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+		  <a class="navbar-brand" href="#">
+		  	<img src="images/logo.png" width="40" height="40" alt="">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbar">
+		    <ul class="nav navbar-nav ml-auto w-100 justify-content-end my-2	">
+		      <li class="nav-item mx-1">
+		        <a class="nav-link" href="index.html">HOME</a>
+		      </li>
+		      <li class="nav-item active mx-1">
+		        <a class="nav-link" href="#">PORTFOLIO  <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item mx-1">
+		        <a class="nav-link" href="aboutme.html">ABOUT</a>
+		      </li>
+		      <li class="nav-item mx-1">
+		        <a class="nav-link" href="https://github.com/trinhkevin/trinhkevin.github.io/raw/master/resume.pdf" target="_blank">RESUME</a>
+		      </li>
+		      <li class="nav-item mx-1">
+		        <a class="nav-link" href="contactme.html">CONTACT</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="container-fluid p-5">
+			<h1>PORTFOLIO</h1>
+			<ul class="ml-4">
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/Brickbreaker">Brickbreaker (Python)</a></strong> - Multiplayer Brickbreaker game made with the PyGame library played over the network using Twisted.
+				</li>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/theory-project">Mire (Python)</a></strong> - NFA recognizer/simulator that matched regular expressions. Extended to a finite transducer and then a Turing complete programming language (Turing tarpit).
+				</li>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/os-project6">File System (C)</a></strong> - Barebones file system that modifies data on a disk emulator.
+				</li>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/os-project5">Virtual Memory (C)</a></strong> - Simulates a virtual memory on the disk and uses varying algorithms to evict data from physical memory.
+				</li>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/os-project4">Multithreaded Website Word Parser (C++)</a></strong> - Finds word occurences on websites using a multithreaded producer/consumer queue.
+				</span>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/os-project3">Parallel Mandelbrot (C)</a></strong> - Draws a "movie" out of multiple Mandelbrot sets (fractal structure) using multiprocessing and multithreading.
+				</li>
+				<li class="py-1">
+					<strong><a href="http://m-lab.cse.nd.edu/">Pataka App (Android/Java)</a></strong> - Ported iOS app (mostly UI/UX) to Android that detects health issues through speech pathology utilizing the pocketsphinx library. This was done for Undergraduate Research.
+				</li>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/Chess" target="_blank">Chess (C++)</a></strong> - Worked in a group of four to create a visual Chess simulation uing SDL2. Included a recursive AI opponent with three difficulties.
+				</li>
+				<li class="py-1">
+					<strong><a href="https://github.com/trinhkevin/Connect-4" target="_blank">Connect 4 (C)</a></strong> - Created an interactive visual Connect 4 game that utilized X11.
+				</li>
+			</ul>
+			<p>	
+				Find more of my work on
+				<a href="https://github.com/trinhkevin/" target="_blank" id="github"><strong><i class="fab fa-github"></i></i></strong> Github</a>
+			</p>
+		</div>
+
+		<!-- Footer -->
+		<footer class="text-muted">
+			<div class="container-fluid px-3">
+				<p align="right">© <script>document.write((new Date()).getFullYear())</script> Kevin Trinh. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- Popper -->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    	<!-- Bootstrap JS -->
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    	<!-- Font Awesome -->
+    	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	</body>
+</htmL>
