@@ -19,22 +19,13 @@
 
 .justify-content-sm-center a {
   border: 2px solid white;
-}
-
-.justify-content-sm-center a:hover {
-  background-color: white;
-}
-
-.justify-content-sm-center a:hover div {
-  color: black;
-}
-
-.col-sm-2 {
   color: white;
   font-size: 1vw;
 }
 
-#reel div div a:hover {
+.justify-content-sm-center a:hover {
+  background-color: white;
+  color: black;
   text-decoration: none;
 }
 
