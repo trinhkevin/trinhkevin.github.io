@@ -25,7 +25,9 @@ footer div p {
 	margin-right: 0 !important;
 }
 
-.col-sm-6 {
+.justify-content-sm-center a div i {
 	height: 100%;
 	width: 100%;
+	text-align: center;
+	line-height: 100%
 }
