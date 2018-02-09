@@ -13,23 +13,23 @@
 }
 
 #reel h1 {
-  font-size: 15vh;
+  font-size: 13vh;
   color: white;
 }
 
-.col-sm-2 {
+.justify-content-sm-center a {
   border: 2px solid white;
 }
 
-.col-sm-2:hover {
+.justify-content-sm-center a:hover {
   background-color: white;
 }
 
-.col-sm-2:hover a {
-  color: black !important;
+.justify-content-sm-center a:hover div {
+  color: black;
 }
 
-#reel div div a {
+.col-sm-2 {
   color: white;
   font-size: 1vw;
 }
