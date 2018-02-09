@@ -1,10 +1,40 @@
 #main {
-  background: url("../images/bg.png") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/bg.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 700px;
+}
+
+#reel {
+  margin-top: 10%;
+  text-align: center;
+}
+
+#reel h1 {
+  color: white;
+}
+
+.col-sm-2 {
+  border: 2px solid white;
+}
+
+.col-sm-2:hover {
+  background-color: white;
+}
+
+.col-sm-2:hover a {
+  color: black !important;
+}
+
+#reel div div a {
+  color: white;
+  font-size: 1vw;
+}
+
+#reel div div a:hover {
+  text-decoration: none;
 }
 
 footer {

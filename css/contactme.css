@@ -3,10 +3,29 @@ footer div p {
 	line-height: 0;
 }
 
-ul li {
-	list-style-type: none;
+.justify-content-sm-center a {
+	border: 2px solid black;
+	height: 20vw;
+	width: 20vw;
 }
 
-ul li a {
+.justify-content-sm-center a:hover {
+	text-decoration: none;
+	background-color: black;
+}
+
+.justify-content-sm-center a:hover div {
+	color: white;
+}
+
+.justify-content-sm-center a div {
 	color: black;
+	height: 100%;
+	width: 100%;
+	margin-right: 0 !important;
+}
+
+.col-sm-6 {
+	height: 100%;
+	width: 100%;
 }
