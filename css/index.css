@@ -4,7 +4,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 65vw;
+  min-height: 100vh;
 }
 
 #reel {
@@ -20,7 +20,7 @@
 .justify-content-sm-center a {
   border: 2px solid white;
   color: white;
-  font-size: 1vw;
+  font-size: 2vh;
 }
 
 .justify-content-sm-center a:hover {

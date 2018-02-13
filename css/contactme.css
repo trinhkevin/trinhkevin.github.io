@@ -1,33 +1,13 @@
+ul {
+	list-style: none;
+}
+
+footer {
+	height: 14px;
+}
+
 footer div p {
+	padding-top: 10px;
 	font-size: 12px;
-	line-height: 0;
-}
-
-.justify-content-sm-center a {
-	border: 2px solid black;
-	height: 20vw;
-	width: 20vw;
-}
-
-.justify-content-sm-center a:hover {
-	text-decoration: none;
-	background-color: black;
-}
-
-.justify-content-sm-center a:hover div {
-	color: white;
-}
-
-.justify-content-sm-center a div {
-	color: black;
-	height: 100%;
-	width: 100%;
-	margin-right: 0 !important;
-}
-
-.justify-content-sm-center a div i {
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	line-height: 100%
+	line-height: 100%;
 }

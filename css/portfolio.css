@@ -1,4 +1,9 @@
+footer {
+	height: 14px;
+}
+
 footer div p {
+	padding-top: 10px;
 	font-size: 12px;
-	line-height: 0;
+	line-height: 100%;
 }
