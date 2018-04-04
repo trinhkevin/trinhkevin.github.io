@@ -14,8 +14,6 @@ footer div p {
 
 .card {
   width: 100%;
-  flex-wrap: wrap;
-  flex: initial; 
-  margin: 5%;
+  height: 100%;
   padding: 0;
 }
