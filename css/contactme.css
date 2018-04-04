@@ -12,6 +12,6 @@ footer div p {
 	line-height: 100%;
 }
 
-content {
+.content {
   min-height: 80vh;
 }

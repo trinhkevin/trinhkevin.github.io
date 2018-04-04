@@ -13,6 +13,6 @@ footer div p {
   margin: 0 auto;
 }
 
-content {
+.content {
   min-height: 80vh;
 }
