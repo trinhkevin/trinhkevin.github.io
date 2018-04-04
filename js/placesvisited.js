@@ -1,34 +1,35 @@
-// Data points (array of [Latitude, Longitude] objects)
-var places = ["Portland, Oregon", 
-              "Orange County, California", 
-              "San Diego, California",
-              "Seattle, Washington",
-              "Tacoma, Washington",
-              "Vancouver, Washington",
-              "Vancouver, BC",
-              "Chicago, Illinois",
-              "Las Vegas, Nevada",
-              "Boise, Idaho",
-              "Phoenix, Arizona",
-              "South Bend, Indiana",
-              "Louisville, Kentucky",
-              "Pittsburgh, Pennsylvania",
-              "Sandusky, Ohio",
-              "Columbus, Ohio",
-              "Youngstown, Ohio",
-              "Nashville, Tennessee",
-              "Rome, Italy",
-              "Brussels, Belgium",
-              "Montreal, Quebec",
-              "Punta Cana, Dominican Republic",
-              "Austin, Texas",
-              "Houston, Texas",
-              "Saigon, Vietnam",
-              "Changi, Singapore"];
+/* Current list of places
+"Portland, Oregon"
+"Orange County, California"
+"San Diego, California"
+"Seattle, Washington"
+"Tacoma, Washington"
+"Vancouver, Washington"
+"Vancouver, BC"
+"Chicago, Illinois"
+"Las Vegas, Nevada"
+"Boise, Idaho"
+"Phoenix, Arizona"
+"South Bend, Indiana"
+"Louisville, Kentucky"
+"Pittsburgh, Pennsylvania"
+"Sandusky, Ohio"
+"Columbus, Ohio"
+"Youngstown, Ohio"
+"Nashville, Tennessee"
+"Rome, Italy"
+"Brussels, Belgium"
+"Montreal, Quebec"
+"Punta Cana, Dominican Republic"
+"Austin, Texas"
+"Houston, Texas"
+"Saigon, Vietnam"
+"Changi, Singapore"
+*/
+
 
 // Initialize empty heatmap
 function initHeatmap() {
-
   var map = new google.maps.Map(document.getElementById('map'), {
     center: new google.maps.LatLng(0, 0),
     zoom: 2,
@@ -38,35 +39,25 @@ function initHeatmap() {
 }
 
 // Set the place markers on the map
-//function setMarkers(map, places) {
-//  var fs    = require("fs");
-//  var data  = fs.readFile("../")
-//}
-
-// Set the place markers on the map
-async function createMarkers(map, places) {
-  // Converts place names to Latitude Longitude
-  var geocoder = new google.maps.Geocoder();
-
-  for(place in places) {
-    geocoder.geocode({'address': places[place]}, function(results, status) {
-      if(status === 'OK') {
-        console.log("good");
-        console.log(results[0].geometry.location);
-      } 
-      else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
-    });
-    await sleep(300);
-  }
+function setMarkers() {
+  readTextFile("../data/places.data");
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+function readTextFile(file) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.open("GET", file, false);
+  rawFile.onreadystatechange = function() {
+    if(rawFile.readyState === 4) {
+      if(rawFile.status === 200 || rawFile.status == 0) {
+        var allText = rawFile.responseText;
+        alert(allText);
+      }
+    }
+  }
+  rawFile.send(null);
 }
 
 // On document start
 $(function() {
-  createMarkers();
+  setMarkers();
 });
