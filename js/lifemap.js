@@ -1,6 +1,8 @@
+// Portland, Oregon
+var home  = [45.5230622, -122.67648150000002];
+
 /* Places in lat long
 ----------------------
-Portland, Oregon
 Orange County, California
 San Diego, California
 Seattle, Washington
@@ -28,8 +30,7 @@ Saigon, Vietnam
 Changi, Singapore
 Denver, Colorado
 */
-var placesBeen = [[45.5230622, -122.67648150000002],
-                  [33.7174708, -117.83114280000001],
+var placesBeen = [[33.7174708, -117.83114280000001],
                   [32.715738, -117.16108380000003],
                   [47.6062095, -122.3320708],
                   [47.2528768, -122.44429059999999],
@@ -86,6 +87,13 @@ function initMarkerMap() {
 
 // Sets the places markers on the map
 function setMarkers(map) {
+  // Set home
+  var marker = new google.maps.Marker({
+    position:  new google.maps.LatLng(home[0], home[1]),
+    map: map,
+    icon: 'http://maps.google.com/mapfiles/kml/pal2/icon10.png'
+  });
+
   // Places I have been
   for(place in placesBeen) {
     var marker = new google.maps.Marker({
