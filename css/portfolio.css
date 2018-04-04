@@ -17,3 +17,7 @@ footer div p {
   height: 100%;
   padding: 0;
 }
+
+.card .card-body p {
+  min-height: 150px;
+}
