@@ -25,6 +25,7 @@
 "Houston, Texas"
 "Saigon, Vietnam"
 "Changi, Singapore"
+"Denver, Colorado"
 */
 
 // Places in long, lat
@@ -53,7 +54,8 @@ var places = [[-122.67648150000002, 45.5230622],
               [103.98320890000002, 1.3450101],
               [-73.56725599999999, 45.5016889],
               [-68.4054729, 18.5820101],
-              [-95.3698028, 29.7604267]]
+              [-95.3698028, 29.7604267],
+              [-104.990251, 39.739236]]
 
 // Initialize empty heatmap
 function initHeatmap() {
