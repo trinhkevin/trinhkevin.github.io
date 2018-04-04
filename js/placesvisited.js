@@ -51,6 +51,7 @@ async function createMarkers(map, places) {
   for(place in places) {
     geocoder.geocode({'address': places[place]}, function(results, status) {
       if(status === 'OK') {
+        console.log("good");
         console.log(results[0].geometry.location);
       } 
       else {
