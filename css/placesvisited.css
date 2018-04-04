@@ -1,0 +1,14 @@
+footer {
+  height: 14px;
+}
+
+footer div p {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+#map {
+  height: 82vh;
+  margin: 0 auto;
+}
