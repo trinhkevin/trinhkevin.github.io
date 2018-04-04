@@ -12,3 +12,7 @@ div div div img {
 	height: 300px;
 	width: 300px;
 }
+
+content {
+  min-height: 80vh;
+}

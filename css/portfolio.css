@@ -7,3 +7,7 @@ footer div p {
 	font-size: 12px;
 	line-height: 100%;
 }
+
+content {
+  min-height: 80vh;
+}
