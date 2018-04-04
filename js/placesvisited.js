@@ -81,11 +81,11 @@ function initMarkerMap() {
     zoom: 2,
   });
 
-  setMarkers(map, places);
+  setMarkers(map);
 }
 
 // Sets the places markers on the map
-function setMarkers(map, places) {
+function setMarkers(map) {
   // Places I have been
   for(place in placesBeen) {
     var marker = new google.maps.Marker({
