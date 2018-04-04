@@ -47,23 +47,17 @@ function initHeatmap() {
 async function createMarkers(map, places) {
   // Converts place names to Latitude Longitude
   var geocoder = new google.maps.Geocoder();
-  
-  locations = [];
 
   for(place in places) {
     geocoder.geocode({'address': places[place]}, function(results, status) {
       if(status === 'OK') {
-        locations.push(results[0].geometry.location);
+        console.log(results[0].geometry.location);
       } 
       else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
     });
     await sleep(300);
-  }
-
-  for(location in locations) {
-    console.log(locations(location))
   }
 }
 
