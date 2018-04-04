@@ -82,7 +82,12 @@ function initMarkerMap() {
     zoom: 2,
   });
 
+  // Set markers
   setMarkers(map);
+
+  // Set legend
+  legend = document.getElementById('legend');
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
 }
 
 // Sets the places markers on the map
@@ -113,7 +118,7 @@ function setMarkers(map) {
   }
 }
 
-// On document start
+// On document ready
 $(function() {
   initMarkerMap();
 });
