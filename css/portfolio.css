@@ -11,3 +11,11 @@ footer div p {
 .content {
   min-height: 90vh;
 }
+
+.card {
+  width: 100%;
+  flex-wrap: wrap;
+  flex: initial; 
+  margin: 5%;
+  padding: 0;
+}
