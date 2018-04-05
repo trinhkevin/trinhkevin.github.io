@@ -12,9 +12,8 @@ footer div p {
 	line-height: 100%;
 }
 
-div div div img {
-	height: 300px;
-	width: 300px;
+.col-sm-4 img {
+  max-width: 100%;
 }
 
 .content {
