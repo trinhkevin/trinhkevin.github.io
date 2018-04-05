@@ -35,3 +35,7 @@ body {
 .card .card-body p {
   min-height: 20vh;
 }
+
+hr {
+  margin: 0;
+}

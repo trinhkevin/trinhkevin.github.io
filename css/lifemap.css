@@ -40,7 +40,10 @@ footer div p {
   font-size: 10px;
 }
 
-
 #legend img {
   vertical-align: middle;
+}
+
+hr {
+  margin: 0;
 }

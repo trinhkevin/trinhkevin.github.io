@@ -35,3 +35,7 @@ footer div p {
 .card .card-body p {
   min-height: 5vh;
 }
+
+hr {
+  margin: 0;
+}

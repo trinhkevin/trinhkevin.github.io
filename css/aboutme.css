@@ -20,3 +20,7 @@ div div div img {
 content {
   min-height: 90vh;
 }
+
+hr {
+  margin: 0;
+}
