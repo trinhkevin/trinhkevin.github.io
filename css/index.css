@@ -7,6 +7,10 @@
   min-height: 100vh;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 #reel {
   margin-top: 10%;
   text-align: center;
