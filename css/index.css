@@ -22,7 +22,7 @@ body {
   margin-bottom: 0;
 }
 
-#reel p {
+.attributes {
   font-size: 6vh;
   color: white;
   font-family: 'Pacifico', cursive;
