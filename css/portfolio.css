@@ -40,6 +40,8 @@ hr {
   margin: 0;
 }
 
-.nav-item:hover {
-  border-bottom: 2px solid white;
+@media only screen and (min-width: 40.063em) {
+  .nav-item:hover {
+    border-bottom: 2px solid white;
+  }
 }
