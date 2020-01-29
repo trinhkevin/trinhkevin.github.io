@@ -4,7 +4,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 96vh;
 }
 
 body {
@@ -17,18 +17,18 @@ body {
 }
 
 #reel h1 {
-  font-size: 13vh;
+  font-size: 12vh;
   color: white;
   margin-bottom: 0;
 }
 
 .attributes {
-  font-size: 6vh;
+  font-size: 4vh;
   color: white;
   font-family: 'Pacifico', cursive;
 }
 
-.justify-content-sm-center a {
+.justify-content-center a {
   border: 2px solid white;
   color: white;
   font-size: 2vh;
@@ -48,4 +48,8 @@ footer div p {
 	padding-top: 10px;
 	font-size: 12px;
 	line-height: 100%;
+}
+
+.nav-item:hover {
+  border: 2px solid white;
 }

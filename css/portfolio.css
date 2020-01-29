@@ -33,9 +33,13 @@ body {
 }
 
 .card .card-body p {
-  min-height: 20vh;
+  min-height: 15vh;
 }
 
 hr {
   margin: 0;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid white;
 }
