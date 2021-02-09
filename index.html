@@ -1,94 +1,551 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114050609-1"></script>
-    <script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
 
-		  gtag('config', 'UA-114050609-1');
-		</script>
-		<title>Kevin Trinh</title>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="images/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Required meta tags -->
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kevin Trinh</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Roboto Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
 
-    <!-- Pacifico Font -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <!-- Used for background -->
-    <div class="container-fluid p-0 m-0 bg-light" id="main">
-	  <!-- Navbar -->
-		<nav class="navbar navbar-expand-sm navbar-dark p-1 small">
-		  <a class="navbar-brand p-2" href="#">
-		  	<img src="images/logo.png" width="40" height="40" alt="">
-		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbar">
-		    <ul class="nav navbar-nav ml-auto w-100 justify-content-end my-2	">
-		      <li class="nav-item active mx-1">
-		        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item mx-1">
-		        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-		      </li>
-		      <li class="nav-item mx-1">
-		        <a class="nav-link" href="aboutme.html">ABOUT</a>
-		      </li>
-		      <li class="nav-item mx-1">
-		        <a class="nav-link" href="resume.html">RESUME</a>
-		      </li>
-		      <li class="nav-item mx-1">
-		        <a class="nav-link" href="contactme.html">CONTACT</a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-		<!-- Reel -->
-		<div class="container-fluid justify-content-center" id="reel">
-			<a href="resume.html" class="col-12 mx-3 my-1 py-3 px-3">
-				RESUME
-			</a>
-			<a href="contactme.html" class="col-12 mx-3 my-1 py-3 px-3">
-				CONTACT
-			</a>
-		</div>
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-    <!-- Footer -->
-    <footer class="text-muted">
-      <div class="container-fluid px-3">
-        <p align="right">© <script>document.write((new Date()).getFullYear())</script> Kevin Trinh. All rights reserved.</p>
-      </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <li><a class="smoothscroll" href="#projects">Projects</a></li>
+                    <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Kevin Trinh.</h1>
+
+                    <h3>
+                    I'm a Chicago based <span>software engineer</span> who's interested in <span>data processing</span>, <span>cryptography</span>, and creating useful and
+                    impactful applications for humans. Scroll <a class="smoothscroll" href="#about">down</a>
+                    to learn more <a class="smoothscroll" href="#about">about me</a>.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://github.com/trinhkevin"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/kevinatrinh/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/user.png" alt="Kevin Trinh">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    Hi, my name is Kevin Trinh. Originally from rainy Portland, Oregon, I'm a Chicago transplant drawn to the charms of the midwest.
+
+                    I am a graduate of the University of Notre Dame majoring in Computer Science. My main interests are in data processing, cryptography, and computer security. 
+
+                    In my free time, I love to go to the gym, play basketball, and peruse Reddit (shoutout to <a href="https://www.reddit.com/r/IllegallySmolCats/">r/illegalsmolcats</a>) more than I should. I have one dog named Bella--a fiesty chihuahua, and I am hoping to get a cat!
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        <a href="mailto:me@trinhkevin.com">me@trinhkevin.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="resume.pdf" class="btn btn--download" download>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Journera</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Engineer</span> 
+                            <span class="resume-block__header-date">
+                                November 2019 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    • Developed shims to ingest and adapt customer data to our data pipeline. This involved learning many different
+                    data sources (AWS, Kafka, HTTP) and data types to ingest data on a massive scale.
+                    </p>
+
+                    <p>
+                    • Worked with multiple teams to develop a task scheduler that allows for custom jobs that pull data from a data
+                    warehouse eliminating the need for manual data extraction for customers.  
+                    </p>
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Technology Services Group</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Web/Systems Developer</span> 
+                            <span class="resume-block__header-date">
+                                September 2018 - November 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    • Developed a port of the core ECM product in AWS. Working as the sole developer, I adapted the product to
+                    utilize cloud services and taught myself AWS.
+                    </p>
+
+                    <p>
+                    • Led a migration of 10 billion documents into the AWS hosted application that I ported for stress testing. As
+                    the sole developer, I took this project through multiple weeks of testing and scaling of multiple servers, while
+                    providing reporting and statistics for stakeholders.
+                    </p>
+                </div> <!-- end resume-block -->
+                
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Audigy Group, LLC</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Engineering Intern</span> 
+                            <span class="resume-block__header-date">
+                                June 2018 - August 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    • Designed and developed an application to automate manufacturer hearing aid data processing which freed up
+                    hours of daily labor for coworkers. As the sole developer, I collaborated with the teams that will use this
+                    project for continuous feedback. This project allowed me to teach myself Angular, and I drove this project to
+                    completion for the company.
+                    </p>
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">MoreSteam.com</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Web Developer</span> 
+                            <span class="resume-block__header-date">
+                                May 2017 - February 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    • Designed and developed a ticketing application to automate customer support request triaging, reporting, and
+                    statistics. Working with a coworker, we designed and pair programmed this project to completion and launched
+                    it company­wide.
+                    </p>
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Notre Dame</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Bachelor of Science in Computer Science</span> 
+                            <span class="resume-block__header-date">
+                                May 2018
+                            </span>
+                        </p>
+                    </div>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>GoLang</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"></div>
+                            <strong>Java</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"></div>
+                            <strong>C++</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"></div>
+                            <strong>AWS</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent95"></div>
+                            <strong>SQL</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"></div>
+                            <strong>JavaScript</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Latest Projects</h3>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-3 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/hera.jpg" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/scibot.jpg" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/twitter-insight.jpg" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/brickbreaker.jpg" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/pataka.jpg" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/chess.jpg" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup__desc">
+                    <h5>Basketball Stastistic Tracker</h5>
+                    <p>Command line tool for tracking 15 different types of basketball passes.</p>
+
+                    <div class="column">
+                        <ul class="modal-popup__cat">
+                            <li>Python</li>
+                        </ul>
+                        <a href="https://github.com/trinhkevin/hera" class="modal-popup__details">Project link</a>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup__desc">
+                    <h5>SciBot</h5>
+                    <p>Data Science research bot that parses a research paper database and mines for entities, types, collaborators, and associations utilizing Naive Bayes, KMeans, and other methods.</p>
+
+                    <div class="column">
+                        <ul class="modal-popup__cat">
+                            <li>Python</li>
+                            <li>SciKit Learn</li>
+                        </ul>
+                        <a href="https://github.com/trinhkevin/scibot" class="modal-popup__details">Project link</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+
+                <div class="modal-popup__desc">
+                    <h5>Twitter Insight</h5>
+                    <p>Web application that scrapes Twitter for tweets involving Notre Dame football during game days. The web application then uses sentiment analysis and displays tweet density on a world map using Google Maps API.</p>
+
+                    <div class="column">
+                        <ul class="modal-popup__cat">
+                            <li>Python</li>
+                            <li>SciKit Learn</li>
+                        </ul>
+                        <a href="https://github.com/trinhkevin/twinsight" class="modal-popup__details">Project link</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup__desc">
+                    <h5>Brickbreaker</h5>
+                    <p>Multiplayer Brickbreaker game made with the PyGame library played over the network using Twisted.</p>
+
+                    <div class="column">
+                        <ul class="modal-popup__cat">
+                            <li>Python</li>
+                            <li>Twisted</li>
+                        </ul>
+                        <a href="https://github.com/trinhkevin/brickbreaker" class="modal-popup__details">Project link</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <div class="modal-popup__desc">
+                    <h5>Pataka App</h5>
+                    <p>Ported iOS app (mostly UI/UX) to Android that detects health issues through speech pathology utilizing the pocketsphinx library. This was done for Undergraduate Research.</p>
+
+                    <div class="column">
+                        <ul class="modal-popup__cat">
+                            <li>Java</li>
+                            <li>Android</li>
+                        </ul>
+                        <a href="http://m-lab.cse.nd.edu/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup__desc">
+                    <h5>Chess AI</h5>
+                    <p>Neural network taught via unsupervised learning using 200,000+ LiChess games. Python.</p>
+
+                    <div class="column">
+                        <ul class="modal-popup__cat">
+                            <li>Python</li>
+                            <li>SciKit Learn</li>
+                        </ul>
+                        <a href="https://github.com/trinhkevin/chess-ai" class="modal-popup__details">Project link</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+    </section> <!-- end s-portfolio -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Send me a friendly Hello</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                I always love to chat about technology, job opportunities, or just to connect.
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+                <div class="row contact-infos">
+
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:me@trinhkevin.com">me@trinhkevin.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:me@trinhkevin.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://github.com/trinhkevin"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kevinatrinh/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>  
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Kevin Trinh <script>document.write((new Date()).getFullYear())</script></span> 
+                <span>Powered by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
     </footer>
-	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!--<script type="text/javascript" src="js/index.js"></script>-->
-	</body>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
