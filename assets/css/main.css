@@ -2690,7 +2690,7 @@ input[type="button"]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background-color: black;
+  background-color: #0e0d0d;
   background-attachment: scroll, scroll;
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
