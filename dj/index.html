@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Now playing...</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="../assets/css/dj.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../images/favicon/favicon-16x16.png"
-    />
-  </head>
+	<head>
+		<title>Now playing</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="../assets/css/dj.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../images/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../images/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../images/favicon/favicon-16x16.png"
+		/>
+	</head>
 
-    <!-- Scripts -->
-    <script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/dj.js"></script>
-    <!-- Google Analytics-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52WH1FEH9X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+	<body>
+		<div id="div">
+			<p id="listeners">Listeners: 0</p>
+			Click anywhere to start
+			<canvas id="canvas"></canvas>
+			<audio id="audio"></audio>
+		</div>
 
-      gtag('config', 'G-52WH1FEH9X');
-    </script>
-  </body>
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/dj.js"></script>
+		<!-- Google Analytics-->
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-52WH1FEH9X"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-52WH1FEH9X');
+		</script>
+	</body>
 </html>
