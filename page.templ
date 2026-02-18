@@ -1,0 +1,32 @@
+package main
+
+// Page renders the HTML shell for the resume site.
+templ Page(title string, description string) {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="theme-color" content="#faf8f5"/>
+			<title>{ title }</title>
+			<meta name="description" content={ description }/>
+			<link rel="preconnect" href="https://fonts.googleapis.com"/>
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+			<link rel="stylesheet" href="./src/tailwind.css"/>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500&display=swap"/>
+			<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"/>
+			<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/>
+			<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
+		</head>
+		<body class="bg-cream antialiased text-ink font-sans">
+			{ children... }
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-52WH1FEH9X"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-52WH1FEH9X');
+			</script>
+		</body>
+	</html>
+}

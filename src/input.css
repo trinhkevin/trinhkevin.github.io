@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  /* VSCO-inspired palette */
+  --color-cream: #faf8f5;
+  --color-paper: #f0ede8;
+  --color-sand: #e8e4de;
+  --color-stone: #d4cfc7;
+  --color-charcoal: #2c2926;
+  --color-ink: #4a4540;
+  --color-muted: #7a756e;
+  --color-sage: #8b9a7d;
+  --color-dusty: #c4b5a8;
+
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', ui-serif, serif;
+}

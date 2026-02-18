@@ -1,0 +1,12 @@
+{
+  "name": "trinhkevin.github.io",
+  "private": true,
+  "scripts": {
+    "css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/tailwind.css --minify",
+    "templ": "templ generate"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  # Generate Tailwind CSS
+  css: npx @tailwindcss/cli -i ./src/input.css -o ./src/tailwind.css --minify
+
+  # Generate Templ
+  templ: templ generate
+
+  # Run Go binary to generate .html files
+  go: go run .
+
+  generate:
+    cmds:
+      - task: css
+      - task: templ
+      - task: go
